@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "BigDog",
+  "description": "Make first dog on the moon from the guardian bigger by opening image in a new tab at full size.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.theguardian.com/*"],
+      "js": ["jquery-3.1.0.min.js", "myscript.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "*://*/*"
+  ]
+}
