@@ -4,9 +4,12 @@
   "description": "Make first dog on the moon from the guardian bigger by opening image in a new tab at full size.",
   "version": "1.0",
 
+  "web_accessible_resources": [
+        "*.png"
+  ],
   "content_scripts": [
     {
-      "matches": ["https://www.theguardian.com/*"],
+      "matches": ["https://www.theguardian.com/commentisfree/*"],
       "js": ["jquery-3.1.0.min.js", "myscript.js"]
     }
   ],
